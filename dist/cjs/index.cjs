@@ -1615,7 +1615,7 @@ var Finder = class {
     this.#event = null;
     this.#focus = null;
     this.#lastFocusVisible = null;
-    this.#eventHandlers = /* @__PURE__ */ new Set([
+    /*this.#eventHandlers = /* @__PURE__  new Set([
       {
         keys: ["focus", "focusin"],
         handler: this._handleFocusEvent
@@ -1629,7 +1629,7 @@ var Finder = class {
         handler: this._handleMouseEvent
       }
     ]);
-    this._registerEventListeners();
+    this._registerEventListeners();*/
     this.clearResults(true);
   }
   /**
@@ -3955,9 +3955,9 @@ var Finder = class {
         } else if (pending) {
           pendingItems.add(
             /* @__PURE__ */ new Map([
-              ["index", i],
-              ["twig", twig]
-            ])
+            ["index", i],
+            ["twig", twig]
+          ])
           );
         }
         this.#ast[i].dir = dir;
